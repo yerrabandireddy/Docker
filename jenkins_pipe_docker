@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters{
-        choice(name: "docker", choices: "docker1\nabc", descriprion: "building my docker image")
+        choice(name: "docker", choices: "docker1\nabc", description: "building my docker image")
         string(name: "workspace", description: "give some name")
     }
     stages{
