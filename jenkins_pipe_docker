@@ -17,11 +17,11 @@ pipeline{
                 expresstion {
                     params.docker == docker1
                 }
-                steps{
+                }
+                                steps{
                     sh """
                     docker build tomcat
                     """
-                }
             }
         }
 
