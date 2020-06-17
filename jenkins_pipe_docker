@@ -18,8 +18,8 @@ pipeline{
                 expression {params.docker == docker1}
                 }
                 steps{
-                    
-                   
+                    script{
+                     
             }
         }
 
