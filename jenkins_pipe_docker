@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters{
-        choice(name: "docker", choices: "docker\nabc", descriprion: "building my docker image")
+        choice(name: "docker", choices: "docker1\nabc", descriprion: "building my docker image")
         string(name: "workspace", description: "give some name")
     }
     stages{
@@ -12,6 +12,18 @@ pipeline{
             userRemoteConfigs: [url: " https://github.com/yerrabandireddy/Docker.git"]])
         }
         }
-        
+        stage("buildimg an image"){
+            when {
+                expresstion {
+                    params.docker == docker1
+                }
+                steps{
+                    sh """
+                    docker build tomcat
+                    """
+                }
+            }
+        }
+
     }
 }    
