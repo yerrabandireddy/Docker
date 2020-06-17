@@ -21,6 +21,7 @@ pipeline{
                     
                     sh """
                     ls -l
+                    docker pull tomcat
                    
                     
                     """
