@@ -18,18 +18,10 @@ pipeline{
                 expression {params.docker == docker1}
                 }
                 steps{
-                     script{
                     sh """
-                    terraform init
-                    ls -l
-                    sleep 10s
-                    terraform workspace new ${params.workspace} || true
-                    terraform workspace select ${params.workspace}
-                    terraform plan
+                    docker pull tomcat
                     """
-                }   
-                     
-            
+            }
         }
 
     }
