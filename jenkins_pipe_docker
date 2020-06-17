@@ -7,9 +7,10 @@ pipeline{
     stages{
         stage("cloaning"){
         steps{
-            checkout([$class: 'GitScm',
-            branches: [[name: "origin/master"]],
-            userRemoteConfigs: [[url: " https://github.com/yerrabandireddy/Docker.git"]]])
+                   checkout([$class: 'GitSCM',                                
+                                branches: [[name: "origin/master"]], 
+
+                                userRemoteConfigs: [[url:'''https://github.com/yerrabandireddy/docker.git''']]])
         }
         }
         stage("buildimg an image"){
