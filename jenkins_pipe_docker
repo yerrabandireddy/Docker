@@ -18,6 +18,7 @@ pipeline{
                 expression {params.docker == docker1}
                 }
                 steps{
+                    sleep10s
                     sh """
                     docker build tomcat
                     """
