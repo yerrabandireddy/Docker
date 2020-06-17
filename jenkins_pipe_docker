@@ -14,11 +14,9 @@ pipeline{
         }
         stage("buildimg an image"){
             when {
-                expresstion {
-                    params.docker == docker1
+                expresstion {params.docker == docker1}
                 }
-                }
-                                steps{
+                steps{
                     sh """
                     docker build tomcat
                     """
