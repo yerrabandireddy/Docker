@@ -19,7 +19,7 @@ pipeline{
                 }
                 steps{
                     sh """
-                    docker pull tomcat
+                    docker build .
                     """
             }
         }
