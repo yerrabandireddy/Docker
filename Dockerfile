@@ -4,6 +4,6 @@ MAINTAINER manoj
 
 RUN apt-get update && apt-get upgrade
 
-COPY index.html
+COPY /root/index.html /usr/local/
 
 EXPOSE 80
