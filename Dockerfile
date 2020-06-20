@@ -1,4 +1,4 @@
-FFROM ubuntu:latest
+FROM ubuntu:latest
 
 MAINTAINER manoj
 
