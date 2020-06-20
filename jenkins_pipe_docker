@@ -14,9 +14,7 @@ pipeline{
         }
         }
         stage("buildimg an image"){
-            when {
-                expression {params.docker == docker1}
-                }
+            
                 steps{
                     
                     
