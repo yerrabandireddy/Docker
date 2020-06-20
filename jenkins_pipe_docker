@@ -18,6 +18,9 @@ pipeline{
                 expression {params.docker == docker1}
                 }
                 steps{
+                    ls -l
+                    pwd
+                    sleep 10s
                     sh """
                     docker build .
                     """
