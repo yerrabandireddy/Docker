@@ -18,11 +18,11 @@ pipeline{
                 steps{
                     
                     
-                    
+            
                     sh """
                     ls -l
                     pwd
-                    sleep
+                    sleep 10s
                     docker build .
                     """
             }
