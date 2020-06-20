@@ -2,7 +2,6 @@ pipeline{
     agent any
     parameters{
         choice(name: "docker", choices: "docker1\nabc", description: "building my docker image")
-        string(name: "workspace", description: "give some name")
     }
     stages{
         stage("cloaning"){
@@ -18,7 +17,7 @@ pipeline{
                 steps{
                     
                     
-            
+        
                     sh """
                     ls -l
                     pwd
