@@ -1,6 +1,5 @@
-FROM linux:latest
-MAINTAINER yerrabandireddy@gmail.com    
-RUN -y yum install httpd
-COPY index.html /var/www/html
+FFROM ubuntu:latest
+MAINTAINER manoj
+RUN apt-get update && apt-get upgrade
+COPY index.html /usr/local/bin
 EXPOSE 80
-CMD apachetl -D FOREGROUND  
