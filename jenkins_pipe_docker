@@ -23,7 +23,7 @@ pipeline{
                     pwd
                     sleep 10s
                  docker pull tomcat
-                 docker build .
+                 docker build /root/
                     """
             }
         }
