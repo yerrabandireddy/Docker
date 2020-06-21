@@ -22,7 +22,7 @@ pipeline{
                     ls -l
                     pwd
                     sleep 10s
-                 docker build -t myimage:latest -f- . <<EOF
+                 docker build .
                     """
             }
         }
