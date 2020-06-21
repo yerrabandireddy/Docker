@@ -1,4 +1,4 @@
-docker build -t myimage:latest -f- . <<EOF
+
 FROM ubuntu:latest
 MAINTAINER manoj
 RUN apt-get update && apt-get upgrade && apt-get install
