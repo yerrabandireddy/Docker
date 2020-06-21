@@ -1,5 +1,5 @@
 FROM ubuntu:latest
 MAINTAINER manoj
 RUN apt-get update && apt-get upgrade
-COPY /root/tomcat.yaml index.html
+COPY index.html /root/hello
 EXPOSE 80
