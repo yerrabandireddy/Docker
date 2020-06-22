@@ -25,7 +25,7 @@ pipeline{
                  docker pull tomcat
                  docker build -t hello2 .
                  docker run -dt --name hello_container hello2
-                 docker push hello2
+                 docker push yerrabandireddy/hello2
                     """
             }
         }
