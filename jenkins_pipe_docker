@@ -22,7 +22,8 @@ pipeline{
                     ls -l
                     pwd
                     sleep 10s
-                 docker build -t hello .
+                 docker pull tomcat
+                 docker build -t hello2 .
                     """
             }
         }
