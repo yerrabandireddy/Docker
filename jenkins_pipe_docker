@@ -24,6 +24,7 @@ pipeline{
                     sleep 10s
                  docker pull tomcat
                  docker build -t hello2 .
+                 docker run -dt --name hello_container hello2
                     """
             }
         }
