@@ -26,7 +26,7 @@ pipeline{
                  docker build -t hello2 .
                  docker run -dt --name hello_container hello2
                  docker commit hello_container yerrabandireddy/hello2-02
-                 docker login docker.io
+                 
                 
                     """
             }
